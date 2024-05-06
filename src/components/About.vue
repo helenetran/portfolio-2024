@@ -1,16 +1,6 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="greetings">
-    <h1>I'm Helene TRAN,</h1>
-    <div>frontend developer</div>
+  <div>
+    <h1>About</h1>
   </div>
 </template>
 
