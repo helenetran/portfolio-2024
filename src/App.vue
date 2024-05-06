@@ -1,5 +1,4 @@
 <script setup>
-import Home from './components/Home.vue'
 import Menu from './components/Menu.vue'
 </script>
 
@@ -7,10 +6,14 @@ import Menu from './components/Menu.vue'
   <div class="grid"></div>
   <header class="header">
     <Menu></Menu>
+    <!-- <nav>
+      <RouterLink to='/'> Home</RouterLink>
+      <RouterLink to='/about'> About</RouterLink>
+    </nav> -->
   </header>
 
   <main>
-    <Home class="section"></Home>
+    <RouterView />
   </main>
 
   <footer></footer>
