@@ -1,5 +1,5 @@
 <script setup>
-import About from './components/About.vue'
+import Home from './components/Home.vue'
 import Menu from './components/Menu.vue'
 </script>
 
@@ -10,7 +10,7 @@ import Menu from './components/Menu.vue'
   </header>
 
   <main>
-    <About class="section"></About>
+    <Home class="section"></Home>
   </main>
 
   <footer></footer>
@@ -18,27 +18,15 @@ import Menu from './components/Menu.vue'
 
 <style>
 * {
-  box-sizing: border-box !important;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: CaviarDreams, Arial, Helvetica, sans-serif;
 }
 
 body {
-  margin: 50px !important;
+  min-height: 100dvh;
+  padding: 50px;
 }
 
-.grid {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background-image:
-    repeating-linear-gradient(#f5f5f5 0 1px, transparent 1px 100%),
-    repeating-linear-gradient(90deg, #f5f5f5 0 1px, transparent 1px 100%);
-  background-size: 120px 120px;
-}
 </style>
