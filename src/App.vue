@@ -6,10 +6,6 @@ import Menu from './components/Menu.vue'
   <div class="grid"></div>
   <header class="header">
     <Menu></Menu>
-    <!-- <nav>
-      <RouterLink to='/'> Home</RouterLink>
-      <RouterLink to='/about'> About</RouterLink>
-    </nav> -->
   </header>
 
   <main>
@@ -30,6 +26,8 @@ import Menu from './components/Menu.vue'
 body {
   min-height: 100dvh;
   padding: 50px;
+  padding-top: 100px;
+  background-color: #f5ded5;
 }
 
 </style>

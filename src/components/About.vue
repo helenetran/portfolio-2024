@@ -5,7 +5,5 @@
 </template>
 
 <style lang="scss">
-h1 {
-  text-transform: uppercase;
-}
+
 </style>

@@ -39,6 +39,11 @@ export default {
   nav {
     display: inline;
     padding-left: 10px;
+
+    a {
+      text-decoration: unset;
+      color: unset;
+    }
   }
 }
 </style>
