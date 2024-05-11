@@ -1,5 +1,5 @@
 <template lang="pug">
-  .logo Helene Dev.
+  .logo H.
   .menu
     nav(v-for="(item, i) in menuItems")
       RouterLink(:to="item.link") {{ item.name }}
@@ -31,13 +31,15 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: rgba(255,255,255,0.8);
+  // background: rgba(255,255,255,0.2);
 
-  .logo {font-size: 20px;}
+  .logo {
+    font-family: Autography;
+    font-size: 50px;
+  }
 
 
   nav {
-    display: inline;
     padding-left: 10px;
 
     a {
