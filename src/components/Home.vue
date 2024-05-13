@@ -1,10 +1,29 @@
 <script setup>
+// import { onMounted } from 'vue'
 
+var myName = 'Helene Tran'.split('');
+
+// setInterval(toggleClass, 1000);
+
+// function toggleClass() {
+//   myName.forEach((letter, i) => {
+//     setTimeout(() => {
+//       document.querySelector(`h1 span:nth-child(${i+1})`).classList.add('hide')
+//       console.log(letter, i, 'ca passe dans la fonction')
+//     }, 3000)
+//   })
+// }
+
+// onMounted(() => {
+//   toggleClass()
+// })
 </script>
 
 <template>
   <div class="title">
-    <h1>Helene Tran</h1>
+    <h1 id="my-name">
+      <span v-for="letter in myName" :key="letter">{{ letter }}</span>
+    </h1>
   </div>
   <div class="definitions">
     <div class="definition">
@@ -28,21 +47,10 @@
   font-size: 40px;
   text-align: center;
   padding: 50px;
-
-  h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 10px; /* Adjust as needed */
-    animation:
-    typing 5s steps(20, end) infinite
+  span {
+    opacity: 0;
+    animation: show 3s infinite;
   }
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
 }
 
 .definitions {
@@ -55,6 +63,16 @@
     &:last-child {
       border-right: none;
     }
+  }
+}
+
+$columns: 11;
+
+@for $i from 1 through $columns {
+  h1 span:nth-child(#{$i}) {
+    opacity: 1;
+    color: red;
+    transition-delay: #{$i * 0.5}s;
   }
 }
 </style>
