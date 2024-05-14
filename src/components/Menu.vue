@@ -14,9 +14,9 @@ export default {
   data: () => ({
     menuItems: [
       { name: 'Home', icon: 'icon-home', link: '/', class: 'menu__about-me dark-green', number: 1 },
-      { name: 'About', icon: 'icon-home', link: '/about', class: 'menu__about-me dark-green', number: 2 },
-      { name: 'Projects', icon: 'icon-home', link: '/works', class: 'menu__pworks orange', number: 3 },
-      { name: 'Get in Touch', icon: 'icon-home', link: '/get-in-touch', class: 'menu__get-in-touch light-green', number: 4 },
+      { name: 'Projects', icon: 'icon-home', link: '/works', class: 'menu__pworks orange', number: 2 },
+      { name: 'About', icon: 'icon-home', link: '/about', class: 'menu__about-me dark-green', number: 3 },
+      { name: 'Get in Touch', icon: 'icon-home', link: '/get-in-touch', class: 'menu__get-in-touch light-green', number: 4 }
     ]
   })
 }
