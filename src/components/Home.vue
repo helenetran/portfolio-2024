@@ -1,28 +1,20 @@
 <script setup>
-// import { onMounted } from 'vue'
+import { onMounted, ref } from "vue"
 
-var myName = 'Helene Tran'.split('');
+const playTypewritting = ref(false)
 
-// setInterval(toggleClass, 1000);
+var myName = 'Helene Tran'.split('')
 
-// function toggleClass() {
-//   myName.forEach((letter, i) => {
-//     setTimeout(() => {
-//       document.querySelector(`h1 span:nth-child(${i+1})`).classList.add('hide')
-//       console.log(letter, i, 'ca passe dans la fonction')
-//     }, 3000)
-//   })
-// }
-
-// onMounted(() => {
-//   toggleClass()
-// })
+onMounted(() => {
+  setTimeout(() => playTypewritting.value = true, 200)
+})
 </script>
 
 <template>
-  <div class="title">
+  <div class="title" :class="{ play: playTypewritting }">
     <h1 id="my-name">
       <span v-for="letter in myName" :key="letter">{{ letter }}</span>
+      <div class="caret">|</div>
     </h1>
   </div>
   <div class="definitions">
@@ -47,14 +39,19 @@ var myName = 'Helene Tran'.split('');
   font-size: 40px;
   text-align: center;
   padding: 50px;
+
   span {
     opacity: 0;
-    animation: show 3s infinite;
+  }
+
+  .caret {
+    display: inline-block;
   }
 }
 
 .definitions {
   display: inline-flex;
+
   .definition {
     border: 1px solid var(--border);
     padding: 40px;
@@ -69,10 +66,9 @@ var myName = 'Helene Tran'.split('');
 $columns: 11;
 
 @for $i from 1 through $columns {
-  h1 span:nth-child(#{$i}) {
+  .play h1 span:nth-child(#{$i}) {
     opacity: 1;
-    color: red;
-    transition-delay: #{$i * 0.5}s;
+    transition-delay: #{$i * 0.15}s;
   }
 }
 </style>
