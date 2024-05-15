@@ -1,8 +1,8 @@
 <template lang="pug">
   .logo H.
   .menu
-    nav(v-for="(item, i) in menuItems")
-      RouterLink(:to="item.link") {{ item.name }}
+    nav
+      RouterLink(v-for="(item, i) in menuItems" :to="item.link" class="menu__item") {{ item.name }}
 
 </template>
 
@@ -42,10 +42,17 @@ export default {
 
   nav {
     padding-left: 10px;
+    text-align: right;
+  }
 
-    a {
-      text-decoration: unset;
-      color: unset;
+  .menu__item {
+    padding-bottom: 20px;
+    display: block;
+    height: 20px;
+
+    &:hover {
+      font-size: 18px;
+      transition: ease-in-out 0.3s;
     }
   }
 }
