@@ -43,6 +43,11 @@ main {
   margin: auto;
 }
 
+a {
+  text-decoration: unset;
+  color: unset;
+}
+
 .side-bar {
   border: 1px solid var(--border);
   width: 15vw;
