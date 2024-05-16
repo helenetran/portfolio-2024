@@ -7,6 +7,13 @@
 }
 
 @font-face {
+  font-family: 'CaviarDreamsBold';
+  src: url('@/assets/fonts/CaviarDreamsBold.woff2') format('woff2'), url('@/assets/fonts/CaviarDreamsBold.woff')
+      format('woff');
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Autography';
   src: url('@/assets/fonts/Autography.woff')
       format('woff');
