@@ -1,5 +1,6 @@
 <script setup>
 import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template >
@@ -7,6 +8,7 @@ import Header from './components/Header.vue'
   <!-- Logo, Nav bar. -->
   <Header></Header>
 
+  <!-- Side bars made with CSS. -->
   <div class="side-bar left"></div>
   <div class="side-bar right"></div>
 
@@ -14,7 +16,7 @@ import Header from './components/Header.vue'
     <RouterView />
   </main>
 
-  <footer></footer>
+  <Footer></Footer>
 </template>
 
 <style lang="scss">
@@ -37,8 +39,8 @@ body {
 }
 
 main {
+  min-height: 80vh;
   width: 70vw;
-  padding-top: 100px;
   margin: auto;
 }
 
