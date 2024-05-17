@@ -1,12 +1,11 @@
 <script setup>
-import Menu from './components/Menu.vue'
+import Header from './components/Header.vue'
 </script>
 
 <template >
   <div class="grid"></div>
-  <header class="header">
-    <Menu></Menu>
-  </header>
+  <!-- Logo, Nav bar. -->
+  <Header></Header>
 
   <div class="side-bar left"></div>
   <div class="side-bar right"></div>

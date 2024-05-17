@@ -28,7 +28,7 @@ onMounted(() => {
     </div>
     <div class="definition">
       <h2>verb.</h2>
-      <dir>To weave the magic of HTML, CSS, and JavaScript to bring websites and apps to life flawlessly across all devices.</dir>
+      <!-- <dir>To weave the magic of HTML, CSS, and JavaScript to bring websites and apps to life flawlessly across all devices.</dir> -->
     </div>
   </div>
 </template>
