@@ -24,6 +24,7 @@ export default {
   position: fixed;
   left: 0;
   top: 0;
+  height: 20vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -45,9 +46,11 @@ export default {
     padding-bottom: 20px;
     display: block;
     height: 20px;
+    font-family: 'CaviarDreamsBold';
 
     &:hover {
       font-size: 18px;
+      color: #cd505a;
       transition: ease-in-out 0.3s;
     }
   }
