@@ -20,7 +20,7 @@ onMounted(() => {
   <div class="definitions">
     <div class="definition">
       <h2>noun.</h2>
-      <div>Frontend developer, innovative problem solver.</div>
+      <div>Frontend developer, innovative problem solver - but also...</div>
     </div>
     <div class="definition">
       <h2>adj.</h2>
@@ -28,7 +28,7 @@ onMounted(() => {
     </div>
     <div class="definition">
       <h2>verb.</h2>
-      <!-- <dir>To weave the magic of HTML, CSS, and JavaScript to bring websites and apps to life flawlessly across all devices.</dir> -->
+      <div>To weave the magic of HTML, CSS, and JavaScript to bring websites and apps to life flawlessly across all devices.</div>
     </div>
   </div>
 </template>
