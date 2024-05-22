@@ -42,6 +42,7 @@ main {
   min-height: 80vh;
   width: 70vw;
   margin: auto;
+  margin-bottom: 30vh;
 }
 
 a {
