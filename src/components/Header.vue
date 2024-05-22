@@ -1,6 +1,6 @@
 <template lang="pug">
   header.header
-    .logo H.
+    RouterLink.i-hotdog(to="/")
     nav.menu
       RouterLink(v-for="(item, i) in menuItems" :key="i" :to="item.link" class="menu__item") {{ item.name }}
 
@@ -31,11 +31,7 @@ export default {
   padding: 20px;
   z-index: 1000;
 
-  .logo {
-    font-family: Autography;
-    font-size: 50px;
-  }
-
+  .i-hotdog {font-size: 64px;}
 
   nav {
     padding-left: 10px;
