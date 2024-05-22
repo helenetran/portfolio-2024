@@ -1,32 +1,24 @@
 <script setup>
-import { onMounted, ref } from "vue"
 
-const playTypewritting = ref(false)
-
-var myName = 'Helene Tran'.split('')
-
-onMounted(() => {
-  setTimeout(() => playTypewritting.value = true, 200)
-})
 </script>
 
 <template>
   <div class="title" :class="{ play: playTypewritting }">
-    <h1 id="my-name">
-      <span v-for="letter in myName" :key="letter">{{ letter }}</span>
-      <div class="caret">|</div>
-    </h1>
+    <h1 id="my-name">Helene Tran</h1>
   </div>
   <div class="definitions">
     <div class="definition">
+      <div class="definition__logo i-computer"></div>
       <h2>noun.</h2>
-      <div>Frontend developer, innovative problem solver - but also...</div>
+      <div>Frontend developer, innovative problem solver.</div>
     </div>
     <div class="definition">
+      <div class="definition__logo i-monocle"></div>
       <h2>adj.</h2>
-      <div>curious, detail oriented, passionate.</div>
+      <div>Curious, detail oriented, passionate - but also...</div>
     </div>
     <div class="definition">
+      <div class="definition__logo i-wand"></div>
       <h2>verb.</h2>
       <div>To weave the magic of HTML, CSS, and JavaScript to bring websites and apps to life flawlessly across all devices.</div>
     </div>
@@ -40,13 +32,11 @@ onMounted(() => {
   text-align: center;
   padding: 50px;
 
-  span {
-    opacity: 0;
+  #my-name {
+    font-family: Autography;
+    font-weight: 100;
   }
 
-  .caret {
-    display: inline-block;
-  }
 }
 
 .definitions {
@@ -56,6 +46,20 @@ onMounted(() => {
     border: 1px solid var(--border);
     padding: 40px;
     border-left: none;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+
+    &__logo {font-size: 50px;}
+
+    h2 {
+      font-style: italic;
+      font-family: 'CaviarDreamsBold';
+      font-size: 17px;
+      opacity: 0.8;
+      padding-bottom: 10px;
+    }
+
 
     &:last-child {
       border-right: none;
