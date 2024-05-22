@@ -5,8 +5,9 @@
 <template lang="pug">
   footer.footer
     div.contact
-      div.contact__text Let's talk :)
-      div Email LinkedIn
+      .contact__text Let's talk :)
+      a.i-linkedin(href="https://www.linkedin.com/in/helenetrandev/" target="_blank")
+      a.i-github(href="https://github.com/helenetran" target="_blank")
     div.copyright Copyright @ 2024 Helene Tran. All rights reserved.
 
 </template>
