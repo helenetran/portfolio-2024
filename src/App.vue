@@ -42,7 +42,14 @@ main {
   min-height: 80vh;
   width: 70vw;
   margin: auto;
+  margin-top: 10vh;
   margin-bottom: 30vh;
+
+  h1 {
+    font-size: 24px;
+    padding-left: 10px;
+    text-transform: uppercase;
+  }
 }
 
 a {
