@@ -46,7 +46,7 @@ export default {
 
     &:hover {
       font-size: 18px;
-      color: #cd505a;
+      color: var(--secondary-color);
       transition: ease-in-out 0.3s;
     }
   }
