@@ -31,7 +31,10 @@ export default {
   padding: 20px;
   z-index: 1000;
 
-  .i-hotdog {font-size: 64px;}
+  .i-hotdog {
+    font-size: 64px;
+    color: #000;
+  }
 
   nav {
     padding-left: 10px;
