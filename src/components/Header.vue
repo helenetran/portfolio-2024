@@ -1,8 +1,8 @@
 <template lang="pug">
-  header.header
-    RouterLink.i-hotdog(to="/")
-    nav.menu
-      RouterLink(v-for="(item, i) in menuItems" :key="i" :to="item.link" class="menu__item") {{ item.name }}
+header.header
+  RouterLink.i-hotdog(to="/")
+  nav.menu
+    RouterLink(v-for="(item, i) in menuItems" :key="i" :to="item.link" class="menu__item") {{ item.name }}
 
 </template>
 
