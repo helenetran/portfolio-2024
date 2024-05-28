@@ -143,7 +143,7 @@ l33 6 5 -109 c7 -126 26 -191 77 -259 124 -163 399 -185 665 -53 44 22 117 67
     h2 {
       font-style: italic;
       font-family: 'CaviarDreamsBold';
-      font-size: 17px;
+      font-size: 15px;
       opacity: 0.8;
       padding-bottom: 10px;
     }
