@@ -3,13 +3,12 @@
 </script>
 
 <template lang="pug">
-  footer.footer
-    div.contact
-      .contact__text Let's talk :)
-      a.contact__icon.i-linkedin(href="https://www.linkedin.com/in/helenetrandev/" target="_blank")
-      a.contact__icon.i-github(href="https://github.com/helenetran" target="_blank")
-    div.copyright Copyright @ 2024 Helene Tran. All rights reserved.
-
+footer.footer
+  div.contact
+    .contact__text Let's talk :)
+    a.contact__icon.i-linkedin(href="https://www.linkedin.com/in/helenetrandev/" target="_blank")
+    a.contact__icon.i-github(href="https://github.com/helenetran" target="_blank")
+  div.copyright Copyright @ 2024 Helene Tran. All rights reserved.
 </template>
 
 <style lang="scss">

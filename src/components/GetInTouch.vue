@@ -1,7 +1,6 @@
-<template>
-  <div>
-    <h1>Get in Touch</h1>
-  </div>
+<template lang="pug">
+div
+  h1 Get in Touch
 </template>
 
 <style lang="scss">
