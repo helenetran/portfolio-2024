@@ -45,6 +45,8 @@ export default {
     display: block;
     height: 20px;
     font-family: 'CaviarDreamsBold';
+    text-transform: uppercase;
+    color: black;
 
     &:hover {
       font-size: 18px;
