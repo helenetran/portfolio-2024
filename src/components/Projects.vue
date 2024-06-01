@@ -8,8 +8,8 @@ div
         .description__title Doing this and that
         .description__website www.lorem.com
         .description__keywords css | javascript
-      .project__image image here
-
+      .project__image
+        img(src="@/assets/projects-images/framar.png" alt="project name")
 </template>
 
 <style lang="scss">
@@ -20,7 +20,12 @@ div
     display: flex;
     justify-content: space-between;
 
-    &__image {min-width: 66%;}
+    &__image {
+      max-width: 66%;
+      max-height: 35vh;
+      overflow: hidden;
+    }
+
     .description {
       div {padding-bottom: 5px;}
 
