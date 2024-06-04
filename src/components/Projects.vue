@@ -1,12 +1,12 @@
 <script setup>
 const projects = [
-  { client: 'Framar', title: 'Doing this and that', website: 'css | javascript', keywords: '', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href },
-  { client: 'Everhome', title: '', website: '', keywords: '', image: new URL('@/assets/projects-images/everhome.png', import.meta.url).href },
-  { client: 'Evaluation 361', title: '', website: '', keywords: '', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href },
-  { client: 'Groupe Chênevert', title: '', website: '', keywords: '', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href },
-  { client: 'Vanderbrand', title: '', website: '', keywords: '', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href },
-  { client: 'Superhumans', title: '', website: '', keywords: '', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href },
-  { client: 'Sweet Cocktails', title: '', website: '', keywords: '', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href }
+  { client: 'Framar', title: 'Doing this and that', website: 'https://framar.com', keywords: 'Shopify | javascript | css', image: new URL('@/assets/projects-images/framar.png', import.meta.url).href },
+  { client: 'Everhome', title: '', website: 'https://everhome.co', keywords: 'Shopify | javascript | css', image: new URL('@/assets/projects-images/everhome.png', import.meta.url).href },
+  { client: 'Credibility Institute', title: '', website: 'www.evaluation361.com', keywords: 'Vue.js | javascript | css', image: new URL('@/assets/projects-images/evaluation361.png', import.meta.url).href },
+  { client: 'Groupe Chênevert', title: '', website: 'www.groupechenevert.com', keywords: 'Vue.js | javascript | css', image: new URL('@/assets/projects-images/groupe-chenevert.png', import.meta.url).href },
+  { client: 'Vanderbrand', title: '', website: 'https://onedelisle.com', keywords: 'Vue.js | javascript | css', image: new URL('@/assets/projects-images/onedelisle.png', import.meta.url).href },
+  { client: 'Superhumans', title: '', website: 'https://superhumans.it', keywords: 'Vue.js | javascript | css', image: new URL('@/assets/projects-images/superhumans.png', import.meta.url).href },
+  { client: 'Sweet Cocktails', title: '', website: 'https://sweetcocktails.com', keywords: 'Vue.js | javascript | css', image: new URL('@/assets/projects-images/sweetcocktails.png', import.meta.url).href }
 ]
 </script>
 
@@ -16,9 +16,10 @@ div
   div.projects
     .project(v-for="(item, i) in projects" :key="i")
       .project__description.description
-        .description__client Client: {{ item.client }}
+        .description__client {{ item.client }}
         .description__title {{ item.title }}
         .description__website {{ item.website }}
+        .description__keywords {{ item.keywords }}
       .project__image
         img(:src="item.image" alt="project name")
 </template>
