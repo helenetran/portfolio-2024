@@ -39,7 +39,7 @@ const menuItems = [
   .menu__item {
     padding-bottom: 20px;
     display: block;
-    height: 20px;
+    height: 22px;
     font-family: 'CaviarDreamsBold';
     text-transform: uppercase;
     color: black;
