@@ -1,9 +1,19 @@
 <script setup>
+import { onMounted } from 'vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+
+onMounted(() => {
+  document.addEventListener('mousemove', (e) => {
+    document.getElementById('circular-cursor').style.left = `${e.pageX}px`
+    document.getElementById('circular-cursor').style.top = `${e.pageY}px`
+  })
+})
+
 </script>
 
 <template >
+  <div id="circular-cursor"></div>
   <div class="grid"></div>
   <!-- Logo, Nav bar. -->
   <Header></Header>
@@ -73,4 +83,20 @@ a {
   }
 }
 
+html {
+  cursor: none;
+}
+
+#circular-cursor {
+  background-color: transparent;
+  border:1px solid black;
+  height:20px;
+  width:20px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  position: absolute;
+  z-index: 1;
+  left: -200px;
+}
 </style>
