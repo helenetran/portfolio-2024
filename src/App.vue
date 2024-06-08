@@ -88,10 +88,14 @@ html {
 }
 
 #circular-cursor {
-  background-color: transparent;
-  border:1px solid black;
-  height:20px;
-  width:20px;
+  background-color: var(--secondary-color);
+  height:50px;
+  width:50px;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
   border-radius:50%;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
