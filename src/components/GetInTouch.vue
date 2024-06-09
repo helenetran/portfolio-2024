@@ -38,6 +38,7 @@ form {
     border: none;
     margin-top: 10px;
     padding: 10px;
+    outline: none;
   }
   button {
     align-self: flex-end;
