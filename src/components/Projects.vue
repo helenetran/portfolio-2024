@@ -1,4 +1,11 @@
 <script setup>
+import { onMounted } from 'vue'
+
+onMounted (() => {
+  const body = document.getElementsByTagName('body')
+  body[0].id = 'projects-page'
+})
+
 const projects = [
   {
     client: 'Framar',

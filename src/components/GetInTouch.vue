@@ -1,3 +1,11 @@
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted (() => {
+  const body = document.getElementsByTagName('body')
+  body[0].id = 'get-in-touch-page'
+})
+</script>
 <template lang="pug">
 div
   h1 Get in Touch
