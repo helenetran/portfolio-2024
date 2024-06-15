@@ -10,7 +10,8 @@ const menuItems = [
   { name: 'Home', icon: 'icon-home', link: '/', class: 'menu__about-me dark-green' },
   { name: 'Projects', icon: 'icon-home', link: '/projects', class: 'menu__projects orange' },
   { name: 'About', icon: 'icon-home', link: '/about', class: 'menu__about-me dark-green' },
-  { name: 'Get in Touch', icon: 'icon-home', link: '/get-in-touch', class: 'menu__get-in-touch light-green' }
+  { name: 'Get in Touch', icon: 'icon-home', link: '/get-in-touch', class: 'menu__get-in-touch light-green' },
+  { name: 'Fr' }
 ]
 </script>
 
