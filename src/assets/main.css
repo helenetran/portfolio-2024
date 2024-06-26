@@ -72,5 +72,7 @@
 :root {
   --border: #f9ede8;
   --primary-color: #444346;
+  --secondary-color-light: #d2616a;
   --secondary-color: #cd505a;
+  --secondary-color-dark: #b84851;
 }
