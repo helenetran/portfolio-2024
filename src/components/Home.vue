@@ -15,7 +15,7 @@
         transform="translate(0.000000,440.000000) scale(0.100000,-0.100000)"
         fill="#000000"
         stroke="none">
-        <path d="M1721 4362 c-27 -50 -52 -278 -75 -682 -24 -406 -56 -1213 -56 -1411
+        <path stroke-dasharray="100%" stroke-dashoffset="100%" d="M1721 4362 c-27 -50 -52 -278 -75 -682 -24 -406 -56 -1213 -56 -1411
         l0 -139 -27 6 c-16 4 -107 31 -203 60 -356 110 -638 169 -950 199 -249 25
         -328 14 -380 -52 -19 -24 -21 -38 -18 -90 7 -116 95 -206 293 -303 66 -33 165
         -74 220 -93 210 -72 602 -160 949 -213 65 -10 120 -23 121 -29 2 -5 8 -140 14
@@ -120,15 +120,6 @@
   display: flex;
   justify-content: center;
   border-top: 1px solid var(--border);
-
-  #my-name {
-    font-family: Autography;
-    font-weight: 100;
-    font-size: 90px;
-    text-align: center;
-    padding: 50px;
-    text-transform: capitalize;
-  }
 }
 
 .definitions {
