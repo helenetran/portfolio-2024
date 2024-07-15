@@ -84,7 +84,7 @@ a {
 }
 
 html {
-  cursor: none;
+  cursor: default;
 }
 
 #circular-cursor {
@@ -102,5 +102,6 @@ html {
   position: absolute;
   z-index: 1;
   left: -200px;
+  transition: ease 0.1s;
 }
 </style>
