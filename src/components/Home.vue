@@ -39,6 +39,9 @@ onMounted (() => {
   justify-content: center;
   border-top: 1px solid var(--border);
   padding: 30px;
+  svg {
+    fill: var(--secondary-color);
+  }
 }
 
 .definitions {

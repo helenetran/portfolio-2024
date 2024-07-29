@@ -70,9 +70,10 @@
 .i-hotdog:before {content: "\62";}
 
 :root {
-  --border: #f9ede8;
+  /* --border: #e6f2fc; */
+  --border: white;
   --primary-color: #444346;
-  --secondary-color-light: #d2616a;
-  --secondary-color: #cd505a;
-  --secondary-color-dark: #b84851;
+  --secondary-color-light: #52aaee;
+  --secondary-color: #0886e7;
+  --secondary-color-dark: #066bb8;
 }
